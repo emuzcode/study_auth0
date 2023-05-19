@@ -51,9 +51,8 @@ test_user@test.com
 Pass1234@
 ```
 
-
 ### Auth0アカウントを作成する
 
 ### 2種類のAuth0ログイン実装
-1. omniauth-auth0　gem　について
-２. auth0　gem　について
+1. [omniauth-auth0](https://rubygems.org/gems/omniauth-auth0) gemについて
+2. [auth0](https://rubygems.org/gems/auth0) gemについて
