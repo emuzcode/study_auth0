@@ -1,6 +1,13 @@
 Rails.application.routes.draw do
-  # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
+  # main controller
+  root "main#home"
 
-  # Defines the root path route ("/")
-  # root "articles#index"
+  #users controller
+  get  '/signup',  to: 'users#new'
+  resources :users
+
+  #sessions controller
+  get    '/login',   to: 'sessions#new'
+  post   '/login',   to: 'sessions#create'
+  delete '/logout',  to: 'sessions#destroy'
 end

@@ -1,0 +1,9 @@
+<h1>これはMain Controllerのhomeです</h1>
+<% if !current_user.nil? %>
+  <p><%= current_user.name %> さんはログイン中です</p>
+  <p><%= link_to "ログアウト", logout_path, data: { "turbo-method": :delete } %></p>
+<% else %>
+  <p>ログインをまだしてません</p>
+  <p>新規登録は <%= link_to "こちら", signup_path %></p>
+  <p>ログインは <%= link_to "こちら", login_path %></p>
+<% end %>
