@@ -110,10 +110,6 @@ http://localhost:3000
 
 ### 簡単ログイン実装（済みなので確認）
 
-```
-docker-compose exec rails db:migrate:reset
-```
-
 確認ができたら一旦落としましょう. Ctrl+C の後に 
 ```
 docker-compose down 
