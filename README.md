@@ -104,14 +104,6 @@ http://localhost:3000
 
 ### 簡単ログイン実装（済みなので確認）
 
-テストユーザー:
-```email
-test_user@test.com
-```
-
-```password
-Pass1234@
-```
 
 ### Auth0アカウントを作成する
 
@@ -127,17 +119,41 @@ https://auth0.com/docs
 
 <img width="320" alt="image" src="https://github.com/emuzcode/study_auth0/assets/84742299/2de02a5c-5fe3-45a0-a864-78100a90ec62">
 
+<img width="320" alt="image" src="https://github.com/emuzcode/study_auth0/assets/84742299/0268772f-b4a9-4e51-94ed-809f86e9037c">
 
-3. Auth0 Rails チュートリアルページ
+<img width="320" alt="image" src="https://github.com/emuzcode/study_auth0/assets/84742299/d6bb4a2e-8060-4996-a611-e5d2fb8314d1">
 
-```
-https://auth0.com/docs/quickstart/webapp/rails/01-login
-```
+<img width="320" alt="image" src="https://github.com/emuzcode/study_auth0/assets/84742299/7fa381bd-0306-4ba9-a915-d99a0bc1ff30">
+
+<img width="320" alt="image" src="https://github.com/emuzcode/study_auth0/assets/84742299/1a28524e-9034-4f13-b887-a1fec6ab9e34">
+
+アカウント作成完了
+<img width="320" alt="image" src="https://github.com/emuzcode/study_auth0/assets/84742299/4190e6f4-ba0c-4a31-b9a4-7474026613bf">
+
+準備
+<img width="320" alt="image" src="https://github.com/emuzcode/study_auth0/assets/84742299/65c3379b-ca5a-494e-a16d-621eac3e31a1">
+
+<img width="320" alt="image" src="https://github.com/emuzcode/study_auth0/assets/84742299/c75956e2-73cb-4491-a78a-817f36a149ac">
+
+<img width="320" alt="image" src="https://github.com/emuzcode/study_auth0/assets/84742299/f9f8a568-9567-4f3a-bc09-b24d096cba9d">
+
+<img width="３２０" alt="image" src="https://github.com/emuzcode/study_auth0/assets/84742299/2b7ed0ca-b907-4a98-9189-d45dacb38df9">
 
 ### 2種類のAuth0ログイン実装
 1. [omniauth-auth0](https://rubygems.org/gems/omniauth-auth0) gemについて
 
 OmniAuth は、Web アプリケーションのマルチプロバイダー認証を標準化するライブラリです。 強力かつ柔軟で、できる限り最小限の処理を行うように作成されました。
+
+参考
+```
+https://auth0.com/docs/quickstart/webapp/rails/01-login
+```
+
+１ ルートディレクトリから以下のコマンドを実行
+```
+touch ./config/auth0.yml
+```
+
 
 
 
