@@ -126,27 +126,27 @@ https://auth0.com/docs
 2. サインアップをする
 
 
-<img width="320" alt="image" src="https://github.com/emuzcode/study_auth0/assets/84742299/2de02a5c-5fe3-45a0-a864-78100a90ec62">
+<img width="1440" alt="image" src="https://github.com/emuzcode/study_auth0/assets/84742299/2de02a5c-5fe3-45a0-a864-78100a90ec62">
 
-<img width="320" alt="image" src="https://github.com/emuzcode/study_auth0/assets/84742299/0268772f-b4a9-4e51-94ed-809f86e9037c">
+<img width="1440" alt="image" src="https://github.com/emuzcode/study_auth0/assets/84742299/0268772f-b4a9-4e51-94ed-809f86e9037c">
 
-<img width="320" alt="image" src="https://github.com/emuzcode/study_auth0/assets/84742299/d6bb4a2e-8060-4996-a611-e5d2fb8314d1">
+<img width="1440" alt="image" src="https://github.com/emuzcode/study_auth0/assets/84742299/d6bb4a2e-8060-4996-a611-e5d2fb8314d1">
 
-<img width="320" alt="image" src="https://github.com/emuzcode/study_auth0/assets/84742299/7fa381bd-0306-4ba9-a915-d99a0bc1ff30">
+<img width="1440" alt="image" src="https://github.com/emuzcode/study_auth0/assets/84742299/7fa381bd-0306-4ba9-a915-d99a0bc1ff30">
 
-<img width="320" alt="image" src="https://github.com/emuzcode/study_auth0/assets/84742299/1a28524e-9034-4f13-b887-a1fec6ab9e34">
+<img width="1440" alt="image" src="https://github.com/emuzcode/study_auth0/assets/84742299/1a28524e-9034-4f13-b887-a1fec6ab9e34">
 
 アカウント作成完了
-<img width="320" alt="image" src="https://github.com/emuzcode/study_auth0/assets/84742299/4190e6f4-ba0c-4a31-b9a4-7474026613bf">
+<img width="1440" alt="image" src="https://github.com/emuzcode/study_auth0/assets/84742299/4190e6f4-ba0c-4a31-b9a4-7474026613bf">
 
 準備
-<img width="320" alt="image" src="https://github.com/emuzcode/study_auth0/assets/84742299/65c3379b-ca5a-494e-a16d-621eac3e31a1">
+<img width="1440" alt="image" src="https://github.com/emuzcode/study_auth0/assets/84742299/65c3379b-ca5a-494e-a16d-621eac3e31a1">
 
-<img width="320" alt="image" src="https://github.com/emuzcode/study_auth0/assets/84742299/c75956e2-73cb-4491-a78a-817f36a149ac">
+<img width="1440" alt="image" src="https://github.com/emuzcode/study_auth0/assets/84742299/c75956e2-73cb-4491-a78a-817f36a149ac">
 
-<img width="320" alt="image" src="https://github.com/emuzcode/study_auth0/assets/84742299/f9f8a568-9567-4f3a-bc09-b24d096cba9d">
+<img width="1440" alt="image" src="https://github.com/emuzcode/study_auth0/assets/84742299/f9f8a568-9567-4f3a-bc09-b24d096cba9d">
 
-<img width="３２０" alt="image" src="https://github.com/emuzcode/study_auth0/assets/84742299/2b7ed0ca-b907-4a98-9189-d45dacb38df9">
+<img width="1440" alt="image" src="https://github.com/emuzcode/study_auth0/assets/84742299/2b7ed0ca-b907-4a98-9189-d45dacb38df9">
 
 ルートディレクトリから以下のコマンドを実行
 ```
@@ -162,7 +162,23 @@ AUTH0_CLIENT_SECRET=""
 
 ""の中に値を入れていきましょう
 
-<img width="320" alt="image" src="https://github.com/emuzcode/study_auth0/assets/84742299/2d6c58c2-808e-4055-9e61-779f5e5cac5d">
+<img width="1440" alt="image" src="https://github.com/emuzcode/study_auth0/assets/84742299/2d6c58c2-808e-4055-9e61-779f5e5cac5d">
+
+次にAuth0の設定をしていきます
+
+<img width="1440" alt="image" src="https://github.com/emuzcode/study_auth0/assets/84742299/1d173a9e-4c5c-4c69-a0d7-08beb7e284ca">
+
+Allowed Callback URLs
+```
+http://localhost:3000/auth/auth0/callback
+```
+
+Allowed Logout URLs
+```
+http://localhost:3000
+```
+
+<img width="1440" alt="image" src="https://github.com/emuzcode/study_auth0/assets/84742299/3e94a6bc-5cea-4820-8bce-86645358ea06">
 
 
 
@@ -248,6 +264,37 @@ get '/auth/logout' => 'auth0#logout'
 <h1>Auth0接続確認</h1>
 <%= button_to 'Login', '/auth/auth0', method: :post, data: { turbo: false } %>
 ```
+
+では　http://localhost:3000/　から確認してみましょう
+この画面が表示されたら成功です。
+<img width="1440" alt="image" src="https://github.com/emuzcode/study_auth0/assets/84742299/e7d8db04-5e91-4923-80e3-cc4416e452b3">
+
+試しにサインアップしてみましょう。
+ホーム画面が最後に表示されれば一旦ログインは完了です。
+
+遷移の流れ：
+ホーム画面　→ Auth0ログイン画面　→ ホーム画面
+
+ここからユーザがちゃんと作成されたかわかります。
+<img width="1440" alt="image" src="https://github.com/emuzcode/study_auth0/assets/84742299/ddedf34e-1681-4a6d-a85e-72a504f99694">
+
+では既存のログイン機能に組み込んでみましょう
+
+app/controllers/sessions_controller.rb
+```
+def create
+  user = User.find_by(email: params[:session][:email].downcase)
+  if user && user.authenticate(params[:session][:password])
+    session[:user_id] = user.id
+    #redirect_to root_path
+    redirect_post('/auth/auth0', params: { prompt: 'login' },
+      options: { method: :post, authenticity_token: 'auto' })
+  else
+    redirect_to login_path
+  end
+end
+```
+
 
 
 2. [auth0](https://rubygems.org/gems/auth0) gemについて
