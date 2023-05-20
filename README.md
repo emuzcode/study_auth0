@@ -102,7 +102,7 @@ docker-compose up
 http://localhost:3000
 ```
 
-### 簡単ログイン実装
+### 簡単ログイン実装（済みなので確認）
 
 テストユーザー:
 ```email
@@ -115,6 +115,32 @@ Pass1234@
 
 ### Auth0アカウントを作成する
 
+1. Auth0 Quickstartページ
+
+```
+https://auth0.com/docs
+```
+
+
+2. サインアップをする
+
+
+<img width="320" alt="image" src="https://github.com/emuzcode/study_auth0/assets/84742299/2de02a5c-5fe3-45a0-a864-78100a90ec62">
+
+
+3. Auth0 Rails チュートリアルページ
+
+```
+https://auth0.com/docs/quickstart/webapp/rails/01-login
+```
+
 ### 2種類のAuth0ログイン実装
 1. [omniauth-auth0](https://rubygems.org/gems/omniauth-auth0) gemについて
+
+OmniAuth は、Web アプリケーションのマルチプロバイダー認証を標準化するライブラリです。 強力かつ柔軟で、できる限り最小限の処理を行うように作成されました。
+
+
+
 2. [auth0](https://rubygems.org/gems/auth0) gemについて
+
+Auth0 API 用の Ruby ツールキット
