@@ -243,6 +243,12 @@ get '/auth/failure' => 'auth0#failure'
 get '/auth/logout' => 'auth0#logout'
 ```
 
+7 app/views/main/home.html.erb
+```
+<h1>Auth0接続確認</h1>
+<%= button_to 'Login', '/auth/auth0', method: :post, data: { turbo: false } %>
+```
+
 
 2. [auth0](https://rubygems.org/gems/auth0) gemについて
 
