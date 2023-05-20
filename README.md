@@ -272,7 +272,7 @@ get '/auth/logout' => 'auth0#logout'
 <%= button_to 'Login', '/auth/auth0', method: :post, data: { turbo: false } %>
 ```
 
-では　http://localhost:3000/　から確認してみましょう
+では　http://localhost:3000/　　から確認してみましょう
 この画面が表示されたら成功です。
 <img width="1440" alt="image" src="https://github.com/emuzcode/study_auth0/assets/84742299/e7d8db04-5e91-4923-80e3-cc4416e452b3">
 
@@ -306,6 +306,13 @@ end
 
 APIを叩く準備をしましょう！
 <img width="1440" alt="image" src="https://github.com/emuzcode/study_auth0/assets/84742299/8185b5b4-57a2-4a83-9cd9-ce638a9ac1d7">
+
+<img width="1440" alt="image" src="https://github.com/emuzcode/study_auth0/assets/84742299/af8b3d44-f518-4260-a0af-8446433ea19f">
+
+<img width="1440" alt="image" src="https://github.com/emuzcode/study_auth0/assets/84742299/b3ea884d-6b9b-455c-a3a0-a1fe35c40ffc">
+
+<img width="1440" alt="image" src="https://github.com/emuzcode/study_auth0/assets/84742299/bad52a34-b951-46e1-a930-2f1b3ca4ea57">
+
 
 
 
