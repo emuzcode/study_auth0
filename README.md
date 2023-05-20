@@ -192,7 +192,7 @@ OmniAuth は、Web アプリケーションのマルチプロバイダー認証�
 
 Auth0 API 用の Ruby ツールキット
 
-###　omniauth-auth0　gemについて
+### omniauth-auth0　gemについて
 
 参考
 ```
@@ -302,7 +302,7 @@ def create
 end
 ```
 
-###　auth0　gemについて
+### auth0　gemについて
 
 APIを叩く準備をしましょう！
 <img width="1440" alt="image" src="https://github.com/emuzcode/study_auth0/assets/84742299/8185b5b4-57a2-4a83-9cd9-ce638a9ac1d7">
