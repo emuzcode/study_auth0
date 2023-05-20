@@ -188,6 +188,12 @@ http://localhost:3000
 
 OmniAuth は、Web アプリケーションのマルチプロバイダー認証を標準化するライブラリです。 強力かつ柔軟で、できる限り最小限の処理を行うように作成されました。
 
+2. [auth0](https://rubygems.org/gems/auth0) gemについて
+
+Auth0 API 用の Ruby ツールキット
+
+###　omniauth-auth0　gemについて
+
 参考
 ```
 https://auth0.com/docs/quickstart/webapp/rails/01-login
@@ -296,11 +302,14 @@ def create
 end
 ```
 
-
-
-2. [auth0](https://rubygems.org/gems/auth0) gemについて
-
-Auth0 API 用の Ruby ツールキット
+###　auth0　gemについて
 
 APIを叩く準備をしましょう！
 <img width="1440" alt="image" src="https://github.com/emuzcode/study_auth0/assets/84742299/8185b5b4-57a2-4a83-9cd9-ce638a9ac1d7">
+
+
+
+
+
+
+
