@@ -49,6 +49,7 @@ gem "bootsnap", require: false
 # gem "image_processing", "~> 1.2"
 
 # Auth0　ハンズオン用の追加gemです
+gem 'dotenv-rails'
 gem "omniauth-auth0", "~> 3.0"
 gem "omniauth-rails_csrf_protection", "~> 1.0"
 gem "auth0", "~> 5.0"
