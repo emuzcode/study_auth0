@@ -298,6 +298,7 @@ end
 
 
 2. [auth0](https://rubygems.org/gems/auth0) gemについて
+Auth0 API 用の Ruby ツールキット
 
 app/controllers/users_controller.rb
 ```
@@ -369,4 +370,3 @@ end
 
 ```
 
-Auth0 API 用の Ruby ツールキット
