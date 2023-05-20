@@ -97,6 +97,7 @@ docker-compose run web rails db:create
 docker-compose up
 ```
 
+
 以下URLにアクセスしサーバーが立ち上がればOK
 ```
 http://localhost:3000
@@ -104,6 +105,14 @@ http://localhost:3000
 
 ### 簡単ログイン実装（済みなので確認）
 
+```
+docker-compose exec rails db:migrate:reset
+```
+
+確認ができたら一旦落としましょう. Ctrl+C の後に 
+```
+docker-compose down 
+```
 
 ### Auth0アカウントを作成する
 
@@ -139,6 +148,24 @@ https://auth0.com/docs
 
 <img width="３２０" alt="image" src="https://github.com/emuzcode/study_auth0/assets/84742299/2b7ed0ca-b907-4a98-9189-d45dacb38df9">
 
+ルートディレクトリから以下のコマンドを実行
+```
+touch .env
+```
+
+コピペしてください
+```
+AUTH0_DOMAIN=""
+AUTH0_CILENT_ID=""
+AUTH0_CLIENT_SECRET=""
+```
+
+""の中に値を入れていきましょう
+
+<img width="320" alt="image" src="https://github.com/emuzcode/study_auth0/assets/84742299/2d6c58c2-808e-4055-9e61-779f5e5cac5d">
+
+
+
 ### 2種類のAuth0ログイン実装
 1. [omniauth-auth0](https://rubygems.org/gems/omniauth-auth0) gemについて
 
@@ -151,10 +178,70 @@ https://auth0.com/docs/quickstart/webapp/rails/01-login
 
 １ ルートディレクトリから以下のコマンドを実行
 ```
-touch ./config/auth0.yml
+touch ./config/initializers/auth0.rb
+```
+2 以下をコピペ
+```
+Rails.application.config.middleware.use OmniAuth::Builder do
+  provider(
+    :auth0,
+    ENV['AUTH0_CILENT_ID'],
+    ENV['AUTH0_CLIENT_SECRET'],
+    ENV['AUTH0_DOMAIN'],
+    callback_path: '/auth/auth0/callback',
+    authorize_params: {
+      scope: 'openid profile'
+    }
+  )
+end
+```
+
+3  ルートディレクトリからDockerを立ち上げます
+
+```
+docker-compose up
 ```
 
 
+4 ルートディレクトリから以下のコマンドを実行
+```
+docker-compose exec web rails generate controller auth0 callback failure logout --skip-assets --skip-helper --skip-routes --skip-template-engine
+```
+
+5
+```
+class Auth0Controller < ApplicationController
+  def callback
+    auth_info = request.env['omniauth.auth']
+    # ログを見てみましょう！
+    p auth_info['credentials']['id_token']
+    redirect_to root_path
+  end
+
+  def failure
+    p request.params['message']
+    redirect_to login_path
+  end
+
+  def logout
+    request_params = {
+      returnTo: login_url,
+      client_id: ENV['AUTH_CLIENT_ID']
+    }
+    URI::HTTPS.build(host: ENV['AUTH_DOMAIN'], path: '/v2/logout', query: request_params.to_query).to_s
+  end
+end
+
+```
+
+6 ./config/routes.rb
+
+```
+#Auth0
+get '/auth/auth0/callback' => 'auth0#callback'
+get '/auth/failure' => 'auth0#failure'
+get '/auth/logout' => 'auth0#logout'
+```
 
 
 2. [auth0](https://rubygems.org/gems/auth0) gemについて
