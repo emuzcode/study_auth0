@@ -94,6 +94,11 @@ docker-compose run web rails db:create
 
 4
 ```
+docker-compose run web rails db:migrate
+```
+
+5
+```
 docker-compose up
 ```
 
