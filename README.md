@@ -30,7 +30,7 @@
 また、1つのシステム基盤にまとめて管理することに不安を感じるかもしれません。しかし、**現状として多くのビジネスパーソンが同一のIDとパスワードを使いまわしていること、1つのシステムさえ保守すれば良いことを考えると、セキュリティの面でもメリットがある**といえます。
 
 この統合認証は、ユーザー認証を総合的に行うもので細分化するといくつかの種類に分かれます。
-<img src="https://github.com/emuzcode/study_auth0/assets/84742299/3a4ce997-29e2-4f3a-b6b9-ada1a38d13fe" width="320px">
+<img src="https://github.com/emuzcode/study_auth0/assets/84742299/3a4ce997-29e2-4f3a-b6b9-ada1a38d13fe" width="1440px">
 
 - ID管理（アイデンティティ管理）
 ID管理ツールを利用することで、IDを一元化して管理できます。変更が必要になった時でも1つのデータを書き換えれば済むので、非常に便利です。
@@ -299,75 +299,8 @@ end
 
 
 2. [auth0](https://rubygems.org/gems/auth0) gemについて
+
 Auth0 API 用の Ruby ツールキット
 
-app/controllers/users_controller.rb
-```
-class UsersController < ApplicationController
-  require 'auth0'
-  require 'uri'
-  require 'cgi'
-  require 'net/http'
-  require 'openssl'
-
-  skip_before_action :verify_authenticity_token
-
-  #新規登録ページ
-  def new
-    @user = User.new
-  end
-
-  def create
-    @user = User.new(user_params)
-    #@user.auth0_id = "仮のpassword"
-
-    # ここから Auth0 API を叩く
-    domain = ENV[AUTH0_DOMAIN]
-    client_id = ENV[AUTH0_CLIENT_ID]
-    client_secret = ENV[AUTH0_CLIENT_SECRET]
-    
-    # get access token
-    url = URI("https://#{domain}/oauth/token")
-    http = Net::HTTP.new(url.host, url.port)
-    http.use_ssl = true
-    http.verify_mode = OpenSSL::SSL::VERIFY_NONE
-    request = Net::HTTP::Post.new(url)
-    request["content-type"] = 'application/x-www-form-urlencoded'
-    request.body = "grant_type=client_credentials&client_id=#{client_id}"
-    request.body << "&client_secret=#{client_secret}&audience=https://#{domain}/api/v2/"
-    response = http.request(request)
-    access_token = JSON.parse(response.read_body)["access_token"]
-
-    @client = Auth0Client.new(
-      client_id: client_id,
-      client_secret: client_secret,
-      domain: domain,
-      token: access_token,
-      api_version: 2,
-      timeout: 15
-    )
-    
-    result = signup_to_auth0(user.email, user.password)
-    user.auth0_id = result['user_id']
-    if @user.save
-      redirect_to login_path
-    else
-      redirect_to signup_path
-    end
-  end
-
-  def signup_to_auth0(email, password)
-    connection = "Username-Password-Authentication"
-    options = {email: email, password: password, email_verified: false}
-    @client.create_user connection, options
-  end
-
-  private
-
-    def user_params
-      params.require(:user).permit(:name, :email, :password)
-    end
-end
-
-```
-
+APIを叩く準備をしましょう！
+<img width="1440" alt="image" src="https://github.com/emuzcode/study_auth0/assets/84742299/8185b5b4-57a2-4a83-9cd9-ce638a9ac1d7">
