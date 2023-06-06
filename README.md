@@ -296,11 +296,11 @@ http://localhost:3000
 
 
 ## 2種類のAuth0ログイン実装
-1. [omniauth-auth0](https://rubygems.org/gems/omniauth-auth0) gemについて
+1. [omniauth-auth0](https://rubygems.org/gems/omniauth-auth0) gemについて（ユニバーサルログイン実装）
 
 OmniAuth は、Web アプリケーションのマルチプロバイダー認証を標準化するライブラリです。 強力かつ柔軟で、できる限り最小限の処理を行うように作成されました。
 
-2. [auth0](https://rubygems.org/gems/auth0) gemについて
+2. [auth0](https://rubygems.org/gems/auth0) gemについて（CallbackサーバからAuth0テナントの情報を取得・管理などのカスタマイズ系）
 
 Auth0 API 用の Ruby ツールキット
 
@@ -471,7 +471,7 @@ class SessionsController < ApplicationController
       api_version: 2,
       timeout: 15
     )
-    # auth0 gem のログインメソッド
+    # auth0 gem のメソッド
     # https://www.rubydoc.info/gems/auth0/Auth0/Api/V2/Users#create_user-instance_method
     options = {fields: "email", include_fields: true}
     result = client.users_by_email(user.email, options)
@@ -508,7 +508,7 @@ end
 <img width="800px" alt="image" src="https://github.com/emuzcode/study_auth0/assets/84742299/7ec689e3-f6c8-4e6b-bc40-c039b83e04a9">  
 
 いかがでしたでしょうか。  
-先ほどのAuth0画面は出てこなかったはずです。  
+先ほどのAuth0のログイン画面（ユニバーサルログイン画面）は出てこなかったはずです。  
 
 
 
