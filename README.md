@@ -1,4 +1,4 @@
-# 「ハンズオンで学ぶログイン機能の実装 | 「Auth0」を使った簡単ログイン認証」
+# 「ハンズオンで学ぶログイン機能の実装 |「Auth0」を使った簡単ログイン認証」
 
 日時：6/10(土) 13:00~ (1.5h〜2hの予定)
 
@@ -12,18 +12,16 @@
 ### 概要
 
 1. Auth0とは？
-2. 統合認証の基本
-3. Auth0とは 
-4. 環境構築
-5. 簡単ログイン実装
-6. Auth0アカウントを作成する
-7. 2種類のAuth0ログイン実装
-8. omniauth-auth0 gem について
-9. auth0 gem について
+2. 環境構築
+3. 簡単ログイン実装（確認のみ）
+4. Auth0アカウントを作成する
+5. 2種類のAuth0ログイン実装
+6. omniauth-auth0 gem について
+7. auth0 gem について
+8. 参考URL
 
----
 
-### [Auth0とは？](https://auth0.com/) 
+## [Auth0とは？](https://auth0.com/) 
 
 Auth0は、Auth0　Inc.が提供するクラウドサービスやアプリを利用する際の認証プラットフォームサービスを提供する**IDaaS**の1つです。IDaaSは、自社で運用・管理を行っていた**オンプレミス**での社員のID/パスワード管理を**クラウド**上で実現するサービスです。
 
@@ -44,7 +42,7 @@ Auth0は、Auth0　Inc.が提供するクラウドサービスやアプリを利
 
 
 
-#### Auth0 Inc. のざっくりな歴史
+### Auth0 Inc. のざっくりな歴史
 
 *2013 - 創業　（in USA)*  
 元Microsoft社勤務の社員が中心となって、Webアプリ等の認証・認可のクラウドサービスを、アプリ開発者向けに提供する（アイデンティティプラットフォーム）　　
@@ -55,7 +53,7 @@ Auth0は世界中で高い評価を受ける認証サービスになり、世界
 *2021*  
 競合会社Okta, Inc.　（アイデンティティ管理のサービスプロバイダー）に買収・統合される。　　　
 
-#### Auth0の基本的な4つの機能
+### Auth0の基本的な4つの機能
 
 1. シングルサインオン（SSO）
 2. ユニバーサルログイン
@@ -91,7 +89,11 @@ Google AuthenticatorやOkta Verifyなどが有名な例です。他にもID/パ�
 <img src="https://github.com/emuzcode/study_auth0/assets/84742299/bcf4db79-70ff-4ae6-8091-e1686d91dfa5" width="800px">  
 
 
-#### ざっくりな構成図/アーキテクチャ
+### 他のIDaaSと比べて何が違うの？  
+
+
+
+### ざっくりな構成図/アーキテクチャ
 
 こちらの図をベースに解説していきます。  
 <img src="https://github.com/emuzcode/study_auth0/assets/84742299/b88b2995-ab0e-46fa-b0a4-85fcb383d8ec" width="800px">  
@@ -155,30 +157,10 @@ Auth0に作成したテナントを管理するためのアカウントです。
 <img src="https://github.com/emuzcode/study_auth0/assets/84742299/6c4ed78c-4b44-4540-8e2c-c0cdeafcb80c" width="800px">  
 
 
+### では実際に手を動かしていきましょう！！
 
 
----
-
-Auth0 統合認証プラットフォーム
-
-Auth0はWebアプリやモバイル、APIなどに対して認証・認可のサービスをクラウドで提供している、いわゆるIDaaS (Identity as a Service)ベンダーです。企業がもつWebアプリケーションやAPI, Native Mobile Appなどでユーザー認証や認可、セキュリティを組み込みたいけれでも実装が難しい・・・という方にオススメのソリューションを提供しています。  
-
-既存の統合認証プロダクトと何が違うのか  
-
-- Web APP, Mobile Native AppやWeb API、Single Page Applicationに対応
-- 多要素認証(MFA)に対応
-- Passwordless認証に対応
-
-豊富なサンプルソース
-
-アプリケーションとAuth0間で使用される標準プロトコルは、最新で軽くて利用や統合がしやすいOpenID ConnectやOAuth2.0です。Auth0は主だったプラットフォーム (.NET, Java, PHP, Python, node, iOS, など)向けのSDKを提供していますが、Auth0 SDKを使用することは必須ではありません。認証・認可用にRESTfulなAuthentication APIを公開しており、HTTPリクエストを送信することができればAuth0と連携することが可能です。Native, SPA, Web/App Server, CLIなど約80種類のフレームワークに対するサンプルプロジェクトをgithubに公開しており、これを利用することで簡単に既存アプリケーションをAuth0と連携することができます。(主だったものはAuth0の ドキュメント ページや管理ダッシュボードのApplicationページから構成方法も含めてアクセス可能です)。Auth0はその他にもWS-FederationやSAMLと言った一般的なFederation Protocolにも対応しており、ADFSや外部IdPとAuth0に対応させたアプリケーションに対してはSAML SPとして、SAML対応のSaaSアプリケーションにはSAML IdPとして簡単に連携することができます。
-
-<img src="https://github.com/emuzcode/study_auth0/assets/84742299/45ab7968-3c82-4e39-945d-51caf08aeb78" width="800px">  
-<img src="https://github.com/emuzcode/study_auth0/assets/84742299/e6237314-8bd2-4d37-8908-ab2c5f3712a9" width="800px">  
-
-連携するプラットフォームを選択すると、管理画面からサンプルプログラムのダウンロードや実際にサンプルプログラムを使って認証を行うまでに必要な手順や定義が表示されます。開発者は画面に表示された手順に従うだけで簡単にAuth0での認証サービスを利用することができます。
-
-### 環境構築
+## 環境構築
 
 1
 ```
@@ -211,14 +193,18 @@ docker-compose up
 http://localhost:3000
 ```
 
-### 簡単ログイン実装（済みなので確認）
+
+
+## 簡単ログイン実装（確認のみ）
 
 確認ができたら一旦落としましょう. Ctrl+C の後に 
 ```
 docker-compose down 
 ```
 
-### Auth0アカウントを作成する
+
+
+## Auth0アカウントを作成する
 
 1. Auth0 Quickstartページ
 
@@ -240,10 +226,10 @@ https://auth0.com/docs
 
 <img width="800px" alt="image" src="https://github.com/emuzcode/study_auth0/assets/84742299/1a28524e-9034-4f13-b887-a1fec6ab9e34">   
 
-アカウント作成完了  
+#### アカウント作成完了  
 <img width="800px" alt="image" src="https://github.com/emuzcode/study_auth0/assets/84742299/4190e6f4-ba0c-4a31-b9a4-7474026613bf">   
 
-準備  
+#### 準備  
 <img width="800px" alt="image" src="https://github.com/emuzcode/study_auth0/assets/84742299/65c3379b-ca5a-494e-a16d-621eac3e31a1">   
 
 <img width="800px" alt="image" src="https://github.com/emuzcode/study_auth0/assets/84742299/c75956e2-73cb-4491-a78a-817f36a149ac">   
@@ -286,7 +272,8 @@ http://localhost:3000
 
 
 
-### 2種類のAuth0ログイン実装
+
+## 2種類のAuth0ログイン実装
 1. [omniauth-auth0](https://rubygems.org/gems/omniauth-auth0) gemについて
 
 OmniAuth は、Web アプリケーションのマルチプロバイダー認証を標準化するライブラリです。 強力かつ柔軟で、できる限り最小限の処理を行うように作成されました。
@@ -295,7 +282,11 @@ OmniAuth は、Web アプリケーションのマルチプロバイダー認証�
 
 Auth0 API 用の Ruby ツールキット
 
-### omniauth-auth0　gemについて
+
+
+
+
+## omniauth-auth0　gemについて
 
 参考
 ```
@@ -405,7 +396,9 @@ def create
 end
 ```
 
-### auth0　gemについて
+
+
+## auth0　gemについて
 
 APIを叩く準備をしましょう！  
 <img width="800px" alt="image" src="https://github.com/emuzcode/study_auth0/assets/84742299/8185b5b4-57a2-4a83-9cd9-ce638a9ac1d7">   
@@ -496,7 +489,8 @@ end
 先ほどのAuth0画面は出てこなかったはずです。  
 
 
-### 参考URL
+
+## 参考URL
 
 ID管理分野でOktaによるAuth0の買収が完了、両サービスは今後も継続　　
 https://it.impress.co.jp/articles/-/21450　　
