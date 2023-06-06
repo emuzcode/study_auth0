@@ -388,8 +388,8 @@ get '/auth/logout' => 'auth0#logout'
 <%= button_to 'Login', '/auth/auth0', method: :post, data: { turbo: false } %>
 ```
 
-では　http://localhost:3000/　　から確認してみましょう
-この画面が表示されたら成功です。  
+では　[http://localhost:3000/](http://localhost:3000/) 
+から確認してみましょう。　　この画面が表示されたら成功です。  
 <img width="800px" alt="image" src="https://github.com/emuzcode/study_auth0/assets/84742299/e7d8db04-5e91-4923-80e3-cc4416e452b3">  
 
 試しにサインアップしてみましょう。  
