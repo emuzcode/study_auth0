@@ -5,7 +5,7 @@
 レベル：初級〜中級
 
 
-<img src="https://github.com/emuzcode/study_auth0/assets/84742299/83304269-7b64-4d9d-b850-8f2fa1a30354" width="1440px">  
+<img src="https://github.com/emuzcode/study_auth0/assets/84742299/83304269-7b64-4d9d-b850-8f2fa1a30354" width="800px">  
 
 ---
 
@@ -28,19 +28,19 @@
 Auth0は、Auth0　Inc.が提供するクラウドサービスやアプリを利用する際の認証プラットフォームサービスを提供する**IDaaS**の1つです。IDaaSは、自社で運用・管理を行っていた**オンプレミス**での社員のID/パスワード管理を**クラウド**上で実現するサービスです。
 
 >オンプレミス・・・サーバーやネットワーク機器などを自社で保有し運用する利用形態のこと
-<img src="https://github.com/emuzcode/study_auth0/assets/84742299/e1036516-69ce-40f4-a226-5b06079dbe53" width="1440px">. 
+<img src="https://github.com/emuzcode/study_auth0/assets/84742299/e1036516-69ce-40f4-a226-5b06079dbe53" width="800px">  
 
 
 
 >クラウドサービス・・・従来は利用者が手元のコンピュータで利用していたデータやソフトウェアを、ネットワーク経由で、サービスとして利用者に提供するもの。オンプレミスとは異なり、インターネット上にネットワーク接続ができる環境にいれば、どの場所にいてもサービスを利用することが可能です。つまり、場所を問わずに働くことができます。
-<img src="https://github.com/emuzcode/study_auth0/assets/84742299/f61f3bfd-d3cf-4d33-b277-74293ea16305" width="1440px">. 
+<img src="https://github.com/emuzcode/study_auth0/assets/84742299/f61f3bfd-d3cf-4d33-b277-74293ea16305" width="800px">  
 
 
 
 >IDaaS・・・在宅勤務やテレワークなど自宅やサテライトオフィス、カフェなど、オフィス以外で働く人が増えてきた近年。営業の方やデザイナー、プログラマーといった職種に就く方々は、外出先から社内ネットワークにログインする機会も当たり前になってきました。
 >結果、従来よりも社外からアクセスする機会が増加。　  
 >>社員またはECサイトのなどの会員のID/パスワード管理をクラウド＋セキュリティ対策でサービスにしたものが認証プラットフォームサービスいわゆるIDaaSです。
-<img src="https://github.com/emuzcode/study_auth0/assets/84742299/653c7964-0713-4247-a177-4c33c6189c92" width="1440px">. 
+<img src="https://github.com/emuzcode/study_auth0/assets/84742299/653c7964-0713-4247-a177-4c33c6189c92" width="800px">  
 
 
 
@@ -66,85 +66,104 @@ Auth0は世界中で高い評価を受ける認証サービスになり、世界
 
 シングルサインオンとはクラウドサービスやアプリにワンクリックでログインを可能にする機能です。
 業務上利用頻度の高いOffice365などのサービスをスムーズに利用可能です。
-複数のパスワード管理をしなくて済むので、楽ですね。
-<img src="https://github.com/emuzcode/study_auth0/assets/84742299/4e2714f2-ef7d-44b6-85fd-1e5c3b1a0a75" width="1440px">. 
+複数のパスワード管理をしなくて済むので、楽ですね。  
+<img src="https://github.com/emuzcode/study_auth0/assets/84742299/4e2714f2-ef7d-44b6-85fd-1e5c3b1a0a75" width="800px">  
 
 
 
 > 2. ユニバーサルログイン
 
-中央認証サーバーを活用してのユーザー認証を実行します。ログインフローの変更、ページの高速読み込み、ログイン時でのデザイン一新などの機能があります。様々なアプリケーション間を自由に高速で移動できるだけでなく、次にご説明する多要素認証を組み合わせることで、第3者の不正アクセスのリスク軽減を実現できます
-<img src="https://github.com/emuzcode/study_auth0/assets/84742299/33f63542-6f2e-4154-a9f1-0cc085b65b82" width="1440px">. 
+中央認証サーバーを活用してのユーザー認証を実行します。ログインフローの変更、ページの高速読み込み、ログイン時でのデザイン一新などの機能があります。様々なアプリケーション間を自由に高速で移動できるだけでなく、次にご説明する多要素認証を組み合わせることで、第3者の不正アクセスのリスク軽減を実現できます  
+<img src="https://github.com/emuzcode/study_auth0/assets/84742299/33f63542-6f2e-4154-a9f1-0cc085b65b82" width="800px">  
 
 
 
 > 3. 多要素認証(MFA)
 
-Google AuthenticatorやOkta Verifyなどが有名な例です。他にもID/パスワード入力だけでなく、スマートフォンのSMSを使用したワンタイムパスワードの活用やユーザーの生体機能を組み合わせることもできます。
-<img src="https://github.com/emuzcode/study_auth0/assets/84742299/f000e338-0165-410a-8787-e0da6992ef6d" width="1440px">. 
+Google AuthenticatorやOkta Verifyなどが有名な例です。他にもID/パスワード入力だけでなく、スマートフォンのSMSを使用したワンタイムパスワードの活用やユーザーの生体機能を組み合わせることもできます。  
+<img src="https://github.com/emuzcode/study_auth0/assets/84742299/f000e338-0165-410a-8787-e0da6992ef6d" width="800px">  
 
 
 
 > 4. 異常検出（Anomaly Detection）機能
 
-管理画面上でクリック操作を行うだけで、信頼性の低いIPアドレスからのアクセスや流出・盗難されたパスワードからのアクセスをブロック可能です。
-<img src="https://github.com/emuzcode/study_auth0/assets/84742299/bcf4db79-70ff-4ae6-8091-e1686d91dfa5" width="1440px">. 
+管理画面上でクリック操作を行うだけで、信頼性の低いIPアドレスからのアクセスや流出・盗難されたパスワードからのアクセスをブロック可能です。  
+<img src="https://github.com/emuzcode/study_auth0/assets/84742299/bcf4db79-70ff-4ae6-8091-e1686d91dfa5" width="800px">  
 
 
-#### ざっくりなアーキテクチャ
+#### ざっくりな構成図/アーキテクチャ
+
+こちらの図をベースに解説していきます。  
+<img src="https://github.com/emuzcode/study_auth0/assets/84742299/b88b2995-ab0e-46fa-b0a4-85fcb383d8ec" width="800px">  
+
+> テナント （Tenant）
+
+Auth0を使い始める際、まずはじめに作るのがアカウントとテナントです。テナントは、アカウント作成時に同時に作成できます。  
+テナントにはこれからAuth0を使う上でのもっともベースとなる要素です。このテナント内に要素を追加したり、設定を行ったりすることで使いたいようにカスタマイズしていきます。  
+
+> アカウント （Account）  
+
+Auth0に作成したテナントを管理するためのアカウントです。通常、使い始める際にテナントと同時に作成します。
+アカウントは以下のいずれかの方法で作成できます。  
+
+- Email/Passwordで登録
+- GitHubアカウント
+- Googleアカウント
+- Microsoftアカウント  
+
+テナントとアカウントはN:Nの関係になっており、例えば1つのアカウントで複数のテナントを管理することができます。また、テナント内に新たにアカウントを招待することも可能です。  
+<img src="https://github.com/emuzcode/study_auth0/assets/84742299/dd92aded-7be6-4f34-bb48-712b2aad44b6" width="800px">  
+
+
+> アプリケーション （Application）
+
+アプリケーションはテナントに対してログインを実行する元となるクライアントのことです。ドキュメントによってはクライアント（Client）と記載されることもあります。
+
+アプリケーションは以下のいずれかの種類を作成できます。
+
+- Native/Mobile Application
+- Single Page Web Application
+- Regular Web Application
+- Backend/API
+
+<img width="800px" alt="image" src="https://github.com/emuzcode/study_auth0/assets/84742299/0ab7baa8-bbf9-4078-8405-377000190c0d">  
+
+<img width="800px" alt="image" src="https://github.com/emuzcode/study_auth0/assets/84742299/b0c4c0d1-76ac-4e6d-89d1-3755cf82e3c0">  
+
+<img width="800px" alt="image" src="https://github.com/emuzcode/study_auth0/assets/84742299/0996f7de-f1b2-4f2d-9afa-8c343ad87091">  
+
+<img width="800px" alt="image" src="https://github.com/emuzcode/study_auth0/assets/84742299/028fc3f4-e589-40ed-afd8-9e3165985e87">  
+
+
+また、アプリケーションはテナント内に複数作成することができます。例えば作ろうとしているサービスをiOSアプリ、Androidアプリ、Webアプリで展開しようと思っている場合、3つのアプリケーションを用意します。  
+
+<img src="https://github.com/emuzcode/study_auth0/assets/84742299/ef0049d2-a44f-46c2-b47a-70258f46f91e" width="800px">  
+
+> コネクション （Connection） 
+
+コネクションは簡単に言うと「ログインする方法」です。例えば「メールアドレス/パスワードでログインする」「Twitterでログインする」「Googleでログインする」などといった感じです。  
+テナント内に以下の種類のコネクションを複数作成することができます。  
+
+| 種類 | 説明 | 例 |
+| :---- | :---- | :---- |
+| Database Connection	 | Auth0または自身のデータベースに認証情報を保存する | メールアドレス/パスワード |
+| Social Login | ソーシャルアカウントを使ってログインする | Google, Twitter, LINEなど |
+| Passwordless System | ワンタイムコードを使ってログインする | 電話番号またはメールアドレス |
+
+コネクションは、アプリケーション単位で有効/無効を設定します。例えばiOSアプリとAndroidアプリはTwitterログインとLINEログインを有効にし、管理用のWebアプリではSAMLのみを有効にするといったような構成が可能です。  
+
+<img src="https://github.com/emuzcode/study_auth0/assets/84742299/6c4ed78c-4b44-4540-8e2c-c0cdeafcb80c" width="800px">  
+
+
+
 
 ---
 
-### 統合認証の基本
-
-統合認証とは、社内のイントラネットやクラウドサービスなど複数のシステムを利用する際に、適正ユーザーが適正なシステムにアクセスするため、**ユーザーの認証やIDの管理などを統合的に行うための仕組み**のことをいいます。
-
-つまり**システムにログインするときに必要になる認証情報を一元化して管理・監視すること**です。この統合認証に必要なシステムのことを「**統合認証基盤**」と呼びます。
-
-なぜこの「**統合認証基盤**」が必要なのか
-
-1. 利便性の向上
-
-統合認証にはSSO（シングルサインオン）の機能がついています。一度の認証で異なるサービスやシステムを利用できることはユーザーにとって便利です。さらにID管理システムを利用すれば、システム管理者も手間をかけずにID・パスワードの変更や管理を行えます。
-
-2. セキュリティの向上
-
-ファイヤーウォールなどのマルウェア対策や、暗号化などのハッキング対策は、外部からの攻撃を想定したものです。しかし、これらは**内部の人間による侵入には効果を発揮しません。ログ監視システムやワンタイムパスワード、特権ID管理によって内部の人間による侵入を防げます。**
-
-また、1つのシステム基盤にまとめて管理することに不安を感じるかもしれません。しかし、**現状として多くのビジネスパーソンが同一のIDとパスワードを使いまわしていること、1つのシステムさえ保守すれば良いことを考えると、セキュリティの面でもメリットがある**といえます。
-
-この統合認証は、ユーザー認証を総合的に行うもので細分化するといくつかの種類に分かれます。
-<img src="https://github.com/emuzcode/study_auth0/assets/84742299/3a4ce997-29e2-4f3a-b6b9-ada1a38d13fe" width="1440px">
-
-- ID管理（アイデンティティ管理）
-ID管理ツールを利用することで、IDを一元化して管理できます。変更が必要になった時でも1つのデータを書き換えれば済むので、非常に便利です。
-
-- SSO（シングルサインオン）
-SSOは、ユーザー認証を一度終えればさまざまなサービスにアクセス可能になるシステムのことで、クラウドサービスの普及に伴って利用する機会が増えてきました。
-
-- ワンタイムパスワード
-ワンタイムパスワードは時間が経つとパスワードが無効になるため、強い影響力を持ったシステムを固定のパスワードよりも安全に運用できます。
-
-- 特権ID管理
-ワンタイムパスワードと似た考えですが、システム管理において高い権限を付与されたIDのことを特権IDといいます。特権IDの管理を怠ると重大な障害につながる可能性があります。
-
-- ログ監視
-インターネットの使用履歴を監視し、異常を検知するのがログ監視です。
-
-
-*IDaaSとの関連*
-
-統合認証とよく似た考えで、IDaaSというものがあります。IDaaSは、Identity as a Serviceの略で、IDなどログイン情報の管理をクラウドで行えるようにしたサービスを指しています。しかしIDaaSという概念では、ログ監視などID管理以上のセキュリティを想定していません。ここに両者の違いがあります。
-
-### Auth0とは
-
-Auth0 Inc.は2013年に米国Microsoftに在籍していたメンバーを中心に創業した会社で、Washington州Bellevueに本社があります。創業メンバーはEugenio Pace(CEO), Matias Woloski(CTO)　などMicrosoftに在籍していたメンバーのほか、Node.jsの認証フレームワークである"Passport"の開発者であった Jered Hanson, AT&T, Amazon.com, 国防総省での勤務経験のある Eugen Koganも創業メンバーです。
-
 Auth0 統合認証プラットフォーム
 
-Auth0はWebアプリやモバイル、APIなどに対して認証・認可のサービスをクラウドで提供している、いわゆるIDaaS (Identity as a Service)ベンダーです。企業がもつWebアプリケーションやAPI, Native Mobile Appなどでユーザー認証や認可、セキュリティを組み込みたいけれでも実装が難しい・・・という方にオススメのソリューションを提供しています。
+Auth0はWebアプリやモバイル、APIなどに対して認証・認可のサービスをクラウドで提供している、いわゆるIDaaS (Identity as a Service)ベンダーです。企業がもつWebアプリケーションやAPI, Native Mobile Appなどでユーザー認証や認可、セキュリティを組み込みたいけれでも実装が難しい・・・という方にオススメのソリューションを提供しています。  
 
-既存の統合認証プロダクトと何が違うのか
+既存の統合認証プロダクトと何が違うのか  
 
 - Web APP, Mobile Native AppやWeb API、Single Page Applicationに対応
 - 多要素認証(MFA)に対応
@@ -154,8 +173,8 @@ Auth0はWebアプリやモバイル、APIなどに対して認証・認可のサ
 
 アプリケーションとAuth0間で使用される標準プロトコルは、最新で軽くて利用や統合がしやすいOpenID ConnectやOAuth2.0です。Auth0は主だったプラットフォーム (.NET, Java, PHP, Python, node, iOS, など)向けのSDKを提供していますが、Auth0 SDKを使用することは必須ではありません。認証・認可用にRESTfulなAuthentication APIを公開しており、HTTPリクエストを送信することができればAuth0と連携することが可能です。Native, SPA, Web/App Server, CLIなど約80種類のフレームワークに対するサンプルプロジェクトをgithubに公開しており、これを利用することで簡単に既存アプリケーションをAuth0と連携することができます。(主だったものはAuth0の ドキュメント ページや管理ダッシュボードのApplicationページから構成方法も含めてアクセス可能です)。Auth0はその他にもWS-FederationやSAMLと言った一般的なFederation Protocolにも対応しており、ADFSや外部IdPとAuth0に対応させたアプリケーションに対してはSAML SPとして、SAML対応のSaaSアプリケーションにはSAML IdPとして簡単に連携することができます。
 
-<img src="https://github.com/emuzcode/study_auth0/assets/84742299/45ab7968-3c82-4e39-945d-51caf08aeb78" width="1440px">
-<img src="https://github.com/emuzcode/study_auth0/assets/84742299/e6237314-8bd2-4d37-8908-ab2c5f3712a9" width="1440px">
+<img src="https://github.com/emuzcode/study_auth0/assets/84742299/45ab7968-3c82-4e39-945d-51caf08aeb78" width="800px">  
+<img src="https://github.com/emuzcode/study_auth0/assets/84742299/e6237314-8bd2-4d37-8908-ab2c5f3712a9" width="800px">  
 
 連携するプラットフォームを選択すると、管理画面からサンプルプログラムのダウンロードや実際にサンプルプログラムを使って認証を行うまでに必要な手順や定義が表示されます。開発者は画面に表示された手順に従うだけで簡単にAuth0での認証サービスを利用することができます。
 
@@ -211,59 +230,59 @@ https://auth0.com/docs
 2. サインアップをする
 
 
-<img width="1440" alt="image" src="https://github.com/emuzcode/study_auth0/assets/84742299/2de02a5c-5fe3-45a0-a864-78100a90ec62">
+<img width="800px" alt="image" src="https://github.com/emuzcode/study_auth0/assets/84742299/2de02a5c-5fe3-45a0-a864-78100a90ec62">   
 
-<img width="1440" alt="image" src="https://github.com/emuzcode/study_auth0/assets/84742299/0268772f-b4a9-4e51-94ed-809f86e9037c">
+<img width="800px" alt="image" src="https://github.com/emuzcode/study_auth0/assets/84742299/0268772f-b4a9-4e51-94ed-809f86e9037c">   
 
-<img width="1440" alt="image" src="https://github.com/emuzcode/study_auth0/assets/84742299/d6bb4a2e-8060-4996-a611-e5d2fb8314d1">
+<img width="800px" alt="image" src="https://github.com/emuzcode/study_auth0/assets/84742299/d6bb4a2e-8060-4996-a611-e5d2fb8314d1">   
 
-<img width="1440" alt="image" src="https://github.com/emuzcode/study_auth0/assets/84742299/7fa381bd-0306-4ba9-a915-d99a0bc1ff30">
+<img width="800px" alt="image" src="https://github.com/emuzcode/study_auth0/assets/84742299/7fa381bd-0306-4ba9-a915-d99a0bc1ff30">   
 
-<img width="1440" alt="image" src="https://github.com/emuzcode/study_auth0/assets/84742299/1a28524e-9034-4f13-b887-a1fec6ab9e34">
+<img width="800px" alt="image" src="https://github.com/emuzcode/study_auth0/assets/84742299/1a28524e-9034-4f13-b887-a1fec6ab9e34">   
 
-アカウント作成完了
-<img width="1440" alt="image" src="https://github.com/emuzcode/study_auth0/assets/84742299/4190e6f4-ba0c-4a31-b9a4-7474026613bf">
+アカウント作成完了  
+<img width="800px" alt="image" src="https://github.com/emuzcode/study_auth0/assets/84742299/4190e6f4-ba0c-4a31-b9a4-7474026613bf">   
 
-準備
-<img width="1440" alt="image" src="https://github.com/emuzcode/study_auth0/assets/84742299/65c3379b-ca5a-494e-a16d-621eac3e31a1">
+準備  
+<img width="800px" alt="image" src="https://github.com/emuzcode/study_auth0/assets/84742299/65c3379b-ca5a-494e-a16d-621eac3e31a1">   
 
-<img width="1440" alt="image" src="https://github.com/emuzcode/study_auth0/assets/84742299/c75956e2-73cb-4491-a78a-817f36a149ac">
+<img width="800px" alt="image" src="https://github.com/emuzcode/study_auth0/assets/84742299/c75956e2-73cb-4491-a78a-817f36a149ac">   
 
-<img width="1440" alt="image" src="https://github.com/emuzcode/study_auth0/assets/84742299/f9f8a568-9567-4f3a-bc09-b24d096cba9d">
+<img width="800px" alt="image" src="https://github.com/emuzcode/study_auth0/assets/84742299/f9f8a568-9567-4f3a-bc09-b24d096cba9d">   
 
-<img width="1440" alt="image" src="https://github.com/emuzcode/study_auth0/assets/84742299/2b7ed0ca-b907-4a98-9189-d45dacb38df9">
+<img width="800px" alt="image" src="https://github.com/emuzcode/study_auth0/assets/84742299/2b7ed0ca-b907-4a98-9189-d45dacb38df9">   
 
-ルートディレクトリから以下のコマンドを実行
+ルートディレクトリから以下のコマンドを実行  
 ```
 touch .env
 ```
 
-コピペしてください
+コピペしてください  
 ```
 AUTH0_DOMAIN=""
 AUTH0_CILENT_ID=""
 AUTH0_CLIENT_SECRET=""
 ```
 
-""の中に値を入れていきましょう
+""の中に値を入れていきましょう  
 
-<img width="1440" alt="image" src="https://github.com/emuzcode/study_auth0/assets/84742299/2d6c58c2-808e-4055-9e61-779f5e5cac5d">
+<img width="800px" alt="image" src="https://github.com/emuzcode/study_auth0/assets/84742299/2d6c58c2-808e-4055-9e61-779f5e5cac5d">  
 
-次にAuth0の設定をしていきます
+次にAuth0の設定をしていきます  
 
-<img width="1440" alt="image" src="https://github.com/emuzcode/study_auth0/assets/84742299/1d173a9e-4c5c-4c69-a0d7-08beb7e284ca">
+<img width="800px" alt="image" src="https://github.com/emuzcode/study_auth0/assets/84742299/1d173a9e-4c5c-4c69-a0d7-08beb7e284ca">  
 
-Allowed Callback URLs
+Allowed Callback URLs  
 ```
 http://localhost:3000/auth/auth0/callback
 ```
 
-Allowed Logout URLs
+Allowed Logout URLs  
 ```
 http://localhost:3000
 ```
 
-<img width="1440" alt="image" src="https://github.com/emuzcode/study_auth0/assets/84742299/3e94a6bc-5cea-4820-8bce-86645358ea06">
+<img width="800px" alt="image" src="https://github.com/emuzcode/study_auth0/assets/84742299/3e94a6bc-5cea-4820-8bce-86645358ea06">  
 
 
 
@@ -357,17 +376,17 @@ get '/auth/logout' => 'auth0#logout'
 ```
 
 では　http://localhost:3000/　　から確認してみましょう
-この画面が表示されたら成功です。
-<img width="1440" alt="image" src="https://github.com/emuzcode/study_auth0/assets/84742299/e7d8db04-5e91-4923-80e3-cc4416e452b3">
+この画面が表示されたら成功です。  
+<img width="800px" alt="image" src="https://github.com/emuzcode/study_auth0/assets/84742299/e7d8db04-5e91-4923-80e3-cc4416e452b3">  
 
-試しにサインアップしてみましょう。
+試しにサインアップしてみましょう。  
 ホーム画面が最後に表示されれば一旦ログインは完了です。
 
-遷移の流れ：
+遷移の流れ：  
 ホーム画面　→ Auth0ログイン画面　→ ホーム画面
 
-ここからユーザがちゃんと作成されたかわかります。
-<img width="1440" alt="image" src="https://github.com/emuzcode/study_auth0/assets/84742299/ddedf34e-1681-4a6d-a85e-72a504f99694">
+ここからユーザがちゃんと作成されたかわかります。  
+<img width="800px" alt="image" src="https://github.com/emuzcode/study_auth0/assets/84742299/ddedf34e-1681-4a6d-a85e-72a504f99694">  
 
 では既存のログイン機能に組み込んでみましょう
 
@@ -388,14 +407,14 @@ end
 
 ### auth0　gemについて
 
-APIを叩く準備をしましょう！
-<img width="1440" alt="image" src="https://github.com/emuzcode/study_auth0/assets/84742299/8185b5b4-57a2-4a83-9cd9-ce638a9ac1d7">
+APIを叩く準備をしましょう！  
+<img width="800px" alt="image" src="https://github.com/emuzcode/study_auth0/assets/84742299/8185b5b4-57a2-4a83-9cd9-ce638a9ac1d7">   
 
-<img width="1440" alt="image" src="https://github.com/emuzcode/study_auth0/assets/84742299/af8b3d44-f518-4260-a0af-8446433ea19f">
+<img width="800px" alt="image" src="https://github.com/emuzcode/study_auth0/assets/84742299/af8b3d44-f518-4260-a0af-8446433ea19f">   
 
-<img width="1440" alt="image" src="https://github.com/emuzcode/study_auth0/assets/84742299/b3ea884d-6b9b-455c-a3a0-a1fe35c40ffc">
+<img width="800px" alt="image" src="https://github.com/emuzcode/study_auth0/assets/84742299/b3ea884d-6b9b-455c-a3a0-a1fe35c40ffc">   
 
-<img width="1440" alt="image" src="https://github.com/emuzcode/study_auth0/assets/84742299/bad52a34-b951-46e1-a930-2f1b3ca4ea57">
+<img width="800px" alt="image" src="https://github.com/emuzcode/study_auth0/assets/84742299/bad52a34-b951-46e1-a930-2f1b3ca4ea57">   
 
 app/controllers/sessions_controller.rb
 ```
@@ -467,14 +486,14 @@ end
 ```
 
 では先ほどサインアップしたアカウントでもう一度ログインをしてみましょう
-＊ここを開くとAuth0に登録されているユーザがみれます
-<img width="1440" alt="image" src="https://github.com/emuzcode/study_auth0/assets/84742299/98c0efc9-c634-44f9-87d2-f8c8f13fd7f3">
+＊ここを開くとAuth0に登録されているユーザがみれます  
+<img width="800px" alt="image" src="https://github.com/emuzcode/study_auth0/assets/84742299/98c0efc9-c634-44f9-87d2-f8c8f13fd7f3">  
 
-では、やってみましょう
-<img width="1440" alt="image" src="https://github.com/emuzcode/study_auth0/assets/84742299/7ec689e3-f6c8-4e6b-bc40-c039b83e04a9">
+では、やってみましょう  
+<img width="800px" alt="image" src="https://github.com/emuzcode/study_auth0/assets/84742299/7ec689e3-f6c8-4e6b-bc40-c039b83e04a9">  
 
-いかがでしたでしょうか。
-先ほどのAuth0画面は出てこなかったはずです。
+いかがでしたでしょうか。  
+先ほどのAuth0画面は出てこなかったはずです。  
 
 
 ### 参考URL
@@ -485,4 +504,5 @@ https://it.impress.co.jp/articles/-/21450　　
 Auth0(オースゼロ)とは？口コミや評判からメリット・デメリットを解説　　
 https://locked.jp/blog/what-is-auth0/
 
-
+Auth0の基本構成を図で理解する #Auth0JP  
+https://dev.classmethod.jp/articles/auth0-architecture/
