@@ -223,6 +223,9 @@ http://localhost:3000
 docker-compose down 
 ```
 
+<img width="800px" alt="image" src="https://github.com/emuzcode/study_auth0/assets/84742299/77ad649d-95d3-4f00-bd87-ad10016989fb">  
+
+
 # Lv.3 外部APIの世界へ！
 
 ## Auth0アカウントを作成する
