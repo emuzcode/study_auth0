@@ -509,6 +509,8 @@ end
 では、やってみましょう  
 <img width="800px" alt="image" src="https://github.com/emuzcode/study_auth0/assets/84742299/7ec689e3-f6c8-4e6b-bc40-c039b83e04a9">  
 
+ログも一緒に見てみましょう。  
+先ほどのAuth0のログイン画面（ユニバーサルログイン画面）は出てこなかったはずです。　　
 
 # Lv.99 Auth0 - Embedded Login(ユニバーサルログインを表示しない)を実装しよう!
 
