@@ -181,8 +181,7 @@ Auth0に作成したテナントを管理するためのアカウントです。
 
 ### では実際に手を動かしていきましょう！！
 
-
-## 環境構築
+# Lv.1 環境構築
 
 1
 ```
@@ -215,7 +214,7 @@ docker-compose up
 http://localhost:3000
 ```
 
-
+# Lv.2 他人のコードを読めるようになる！
 
 ## 簡単ログイン実装（確認のみ）
 
@@ -224,7 +223,7 @@ http://localhost:3000
 docker-compose down 
 ```
 
-
+# Lv.3 外部APIの世界へ！
 
 ## Auth0アカウントを作成する
 
@@ -298,15 +297,16 @@ http://localhost:3000
 ## 2種類のAuth0ログイン実装
 1. [omniauth-auth0](https://rubygems.org/gems/omniauth-auth0) gemについて（ユニバーサルログイン実装）
 
-OmniAuth は、Web アプリケーションのマルチプロバイダー認証を標準化するライブラリです。 強力かつ柔軟で、できる限り最小限の処理を行うように作成されました。
 
-2. [auth0](https://rubygems.org/gems/auth0) gemについて（CallbackサーバからAuth0テナントの情報を取得・管理などのカスタマイズ系）
+>OmniAuth gemは、Web アプリケーションのマルチプロバイダー認証を標準化するライブラリです。 強力かつ柔軟で、できる限り最小限の処理を行うように作成されました。
+簡単にいうと、簡単にユニバーサルログインを実装できる便利なgemです！
 
-Auth0 API 用の Ruby ツールキット
+2. [auth0](https://rubygems.org/gems/auth0) gemについて
 
+>Auth0 ManagementAPI用の Rubyツールキット(CallbackサーバからAuth0テナントの情報を取得・管理などのカスタマイズ系)
+簡単にいうと、Auth0のManagementAPIは、ユーザのCRUD操作やアプリケーションの画面設定、Auth0全体の設定を行うためのツールです！
 
-
-
+# Lv.４ Auth0 - ユニバーサルログインを実装しよう!
 
 ## omniauth-auth0　gemについて
 
@@ -418,7 +418,7 @@ def create
 end
 ```
 
-
+# Lv.5 Auth0のManagementAPIを使ってユーザ情報を取得してみよう！
 
 ## auth0　gemについて
 
@@ -506,6 +506,13 @@ end
 
 では、やってみましょう  
 <img width="800px" alt="image" src="https://github.com/emuzcode/study_auth0/assets/84742299/7ec689e3-f6c8-4e6b-bc40-c039b83e04a9">  
+
+
+# Lv.99 Auth0 - Embedded Login(ユニバーサルログインを表示しない)を実装しよう!
+
+こちらの記事を紹介。  
+Centralized Universal Login vs. Embedded Login
+[https://auth0.com/docs/authenticate/login/universal-vs-embedded-login](https://auth0.com/docs/authenticate/login/universal-vs-embedded-login)
 
 いかがでしたでしょうか。  
 先ほどのAuth0のログイン画面（ユニバーサルログイン画面）は出てこなかったはずです。  
