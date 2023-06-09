@@ -299,11 +299,13 @@ http://localhost:3000
 
 
 >OmniAuth gemは、Web アプリケーションのマルチプロバイダー認証を標準化するライブラリです。 強力かつ柔軟で、できる限り最小限の処理を行うように作成されました。
+
 簡単にいうと、簡単にユニバーサルログインを実装できる便利なgemです！
 
 2. [auth0](https://rubygems.org/gems/auth0) gemについて
 
 >Auth0 ManagementAPI用の Rubyツールキット(CallbackサーバからAuth0テナントの情報を取得・管理などのカスタマイズ系)
+
 簡単にいうと、Auth0のManagementAPIは、ユーザのCRUD操作やアプリケーションの画面設定、Auth0全体の設定を行うためのツールです！
 
 # Lv.４ Auth0 - ユニバーサルログインを実装しよう!
