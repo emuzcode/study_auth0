@@ -403,6 +403,9 @@ get '/auth/logout' => 'auth0#logout'
 遷移の流れ：  
 ホーム画面　→ Auth0ログイン画面　→ ホーム画面
 
+<img width="800px" alt="image" src="https://github.com/emuzcode/study_auth0/assets/84742299/018a6f99-c45f-4c95-b37e-8ca1dd51fd5f">  
+
+
 ここからユーザがちゃんと作成されたかわかります。  
 <img width="800px" alt="image" src="https://github.com/emuzcode/study_auth0/assets/84742299/ddedf34e-1681-4a6d-a85e-72a504f99694">  
 
