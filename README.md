@@ -402,11 +402,6 @@ get '/auth/logout' => 'auth0#logout'
 では次にサインアップまで移動してみましょう。  
 ホーム画面が最後に表示されれば一旦ログインは完了です。
 
-ここまでの遷移の流れ：  
-ホーム画面　→ Auth0ログイン画面　→ ホーム画面
-
-<img width="800px" alt="image" src="https://github.com/emuzcode/study_auth0/assets/84742299/018a6f99-c45f-4c95-b37e-8ca1dd51fd5f">  
-
 
 ここからユーザがちゃんと作成されたかわかります。
   
@@ -429,11 +424,19 @@ def create
 end
 ```
 
+
+ここまでの遷移の流れ：  
+ホーム画面　→ Auth0ログイン画面　→ ホーム画面
+
+<img width="800px" alt="image" src="https://github.com/emuzcode/study_auth0/assets/84742299/018a6f99-c45f-4c95-b37e-8ca1dd51fd5f">  
+
+
+
 # Lv.5 Auth0のManagementAPIを使ってユーザ情報を取得してみよう！
 
 ## auth0　gemについて
 
-APIを叩く準備をしましょう！  
+外部API側の準備をしましょう！  
 <img width="800px" alt="image" src="https://github.com/emuzcode/study_auth0/assets/84742299/8185b5b4-57a2-4a83-9cd9-ce638a9ac1d7">   
 
 <img width="800px" alt="image" src="https://github.com/emuzcode/study_auth0/assets/84742299/af8b3d44-f518-4260-a0af-8446433ea19f">   
@@ -441,6 +444,8 @@ APIを叩く準備をしましょう！
 <img width="800px" alt="image" src="https://github.com/emuzcode/study_auth0/assets/84742299/b3ea884d-6b9b-455c-a3a0-a1fe35c40ffc">   
 
 <img width="800px" alt="image" src="https://github.com/emuzcode/study_auth0/assets/84742299/bad52a34-b951-46e1-a930-2f1b3ca4ea57">   
+
+次にソースコードを追加・修正していきます！
 
 app/controllers/sessions_controller.rb
 ```
