@@ -394,22 +394,25 @@ get '/auth/logout' => 'auth0#logout'
 ```
 
 では　[http://localhost:3000/](http://localhost:3000/) 
-から確認してみましょう。　　この画面が表示されたら成功です。  
+
+から確認してみましょう。　　先ほどの「Auth0接続確認」のボタンを押して、以下の画面が表示されたら成功です。  
+
 <img width="800px" alt="image" src="https://github.com/emuzcode/study_auth0/assets/84742299/e7d8db04-5e91-4923-80e3-cc4416e452b3">  
 
-試しにサインアップしてみましょう。  
+では次にサインアップまで移動してみましょう。  
 ホーム画面が最後に表示されれば一旦ログインは完了です。
 
-遷移の流れ：  
+ここまでの遷移の流れ：  
 ホーム画面　→ Auth0ログイン画面　→ ホーム画面
 
 <img width="800px" alt="image" src="https://github.com/emuzcode/study_auth0/assets/84742299/018a6f99-c45f-4c95-b37e-8ca1dd51fd5f">  
 
 
-ここからユーザがちゃんと作成されたかわかります。  
+ここからユーザがちゃんと作成されたかわかります。
+  
 <img width="800px" alt="image" src="https://github.com/emuzcode/study_auth0/assets/84742299/ddedf34e-1681-4a6d-a85e-72a504f99694">  
 
-では既存のログイン機能に組み込んでみましょう
+では↑のユーザを一旦削除してから、既存のログイン機能に組み込んでViewからではなくControllerから先ほどのユニバーサル画面を表示してみましょう。
 
 app/controllers/sessions_controller.rb
 ```
