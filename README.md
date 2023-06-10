@@ -193,6 +193,22 @@ git clone https://github.com/emuzcode/study_auth0.git
 docker-compose build --no-cache
 ```
 
+★★★もしM1もしくはM2のMacbookの場合は以下の部分だけ修正してください！　(修正箇所：　platform: linux/amd64　だけ追加)  
+
+```
+db:
+    image: mysql:5.7
+    environment:
+      MYSQL_ROOT_PASSWORD: password
+      MYSQL_DATABASE: root
+    ports:
+      - "3306:3306"
+    platform: linux/amd64
+    volumes:
+      - ./tmp/db:/var/lib/mysql
+```
+
+
 3
 ```
 docker-compose run web rails db:create
@@ -270,7 +286,7 @@ touch .env
 コピペしてください  
 ```
 AUTH0_DOMAIN=""
-AUTH0_CILENT_ID=""
+AUTH0_CLIENT_ID=""
 AUTH0_CLIENT_SECRET=""
 ```
 
@@ -329,7 +345,7 @@ touch ./config/initializers/auth0.rb
 Rails.application.config.middleware.use OmniAuth::Builder do
   provider(
     :auth0,
-    ENV['AUTH0_CILENT_ID'],
+    ENV['AUTH0_CLIENT_ID'],
     ENV['AUTH0_CLIENT_SECRET'],
     ENV['AUTH0_DOMAIN'],
     callback_path: '/auth/auth0/callback',
